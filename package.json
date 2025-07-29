@@ -8,7 +8,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "_command": "find \"$folder_path\" -type f -iregex \".*\\.\\(jpg\\|png\\)$\" -exec bash -c 'for input_file; do output_file=\"${input_file%.*}.webp\"; cwebp -q 80 \"$input_file\" -o \"$output_file\" &>/dev/null && rm \"$input_file\"; done' _ {} +",
+    "webp": "folder_path=./public/uploads/ pnpm run _command"
 
   },
   "dependencies": {
