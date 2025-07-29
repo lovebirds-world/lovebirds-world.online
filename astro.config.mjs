@@ -5,8 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://lovebirds-world.github.io/", // your lowercase username goes here
-  base: "/lovebirds-world.online/",
+  site: "lovebirds-world.online",
   integrations: [
     tailwind(),
     sitemap(),
