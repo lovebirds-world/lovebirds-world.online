@@ -1,5 +1,5 @@
 {
-  "name": "maucariapacom-church-starter",
+  "name": "lovebirds-world",
   "type": "module",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "deploy": "npm run build && gh-pages -d dist"
-    
+
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.1.1",
