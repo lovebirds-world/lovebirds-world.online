@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "lovebirds-world.online",
+  site: "https://lovebirds-world.online",
   integrations: [
     tailwind(),
     sitemap(),
